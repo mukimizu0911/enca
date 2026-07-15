@@ -11,6 +11,11 @@ for (let i = 1; i <= 30; i++) {
     );
 
 }
+// =========================
+// スマホ判定
+// =========================
+
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
 
 
@@ -41,12 +46,27 @@ let showingFirst = true;
 
 
 
-// 最初の背景を表示
+// =========================
+// 初期背景
+// =========================
 
-bg1.style.backgroundImage =
-    `url("${backgrounds[current]}")`;
+if (isMobile) {
 
-bg1.classList.add("active");
+    bg1.style.backgroundImage =
+        'url("img/back.JPG")';
+
+    bg1.classList.add("active");
+
+}
+
+else {
+
+    bg1.style.backgroundImage =
+        `url("${backgrounds[current]}")`;
+
+    bg1.classList.add("active");
+
+}
 
 
 
@@ -101,7 +121,11 @@ function changeBackground() {
 
 
 // =========================
-// 8秒ごとに切り替え
+// PCだけスライドショー
 // =========================
 
-setInterval(changeBackground, 7000);
+if (!isMobile) {
+
+    setInterval(changeBackground, 7000);
+
+}
