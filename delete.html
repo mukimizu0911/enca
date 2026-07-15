@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>予定削除 | ぬくみずとのエンカ表</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/schedule.css">
+
+</head>
+
+<body>
+
+    <div id="toast" class="toast"></div>
+    
+    <div id="background1" class="background"></div>
+    <div id="background2" class="background"></div>
+
+    <div class="container">
+
+        <h1 class="title">
+            予定を削除
+        </h1>
+
+        <label for="event">
+            イベント
+        </label>
+
+        <select id="event">
+
+            <option value="">
+                選択してください
+            </option>
+
+        </select>
+
+        <div id="scheduleArea">
+
+            <p>
+                イベントを選択してください
+            </p>
+
+        </div>
+
+        <div class="button-group">
+
+            <a
+                href="dashboard.html"
+                class="btn back-btn">
+
+                🏠 マイページへ戻る
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/delete.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/background.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイページ | ぬくみずとのエンカ表</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <div id="toast" class="toast"></div>
+
+    <div id="background1" class="background"></div>
+    <div id="background2" class="background"></div>
+
+    <div class="container">
+
+        <h1 class="title">
+            マイページ
+        </h1>
+
+        <!-- ユーザー情報 -->
+
+        <div id="welcomeArea">
+
+            <h2 id="welcomeUser" class="username">
+                👤 将歩 さん
+            </h2>
+
+            <p id="today" class="today"></p>
+
+            <div id="greetingCard">
+
+                <p id="characterMessage"></p>
+
+            </div>
+
+        </div>
+
+        <!-- メニュー -->
+
+        <div class="menu">
+
+            <a href="view.html" class="btn">
+                📋 予定を見る
+            </a>
+
+            <a href="add.html" class="btn">
+                ➕ 予定を追加
+            </a>
+
+            <a href="edit.html" class="btn">
+                ✏️ 予定を編集
+            </a>
+
+            <a href="delete.html" class="btn">
+                🗑️ 予定を削除
+            </a>
+
+            <a href="#" id="logout" class="btn logout">
+                🚪 ログアウト
+            </a>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/dashboard.js"></script>
+    <script src="js/background.js"></script>
+
+</body>
+
+</html>

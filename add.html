@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予定追加 | ぬくみずとのエンカ表</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <div id="toast" class="toast"></div>
+
+    <div id="background1" class="background"></div>
+    <div id="background2" class="background"></div>
+
+    <div class="container">
+
+        <h1 class="title">
+            予定を追加
+        </h1>
+
+        <form id="addForm">
+
+            <label for="event">
+                イベント
+            </label>
+
+            <select id="event" required>
+                <option value="">選択してください</option>
+            </select>
+
+            <label for="time">
+                時間
+            </label>
+
+            <select id="time" required>
+                <option value="">イベントを選択してください</option>
+            </select>
+
+            <div class="button-group">
+
+                <button class="btn" type="submit">
+                    登録する
+                </button>
+
+                <a href="dashboard.html" class="btn back-btn">
+                    🏠 マイページへ戻る
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <script type="module" src="js/add.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/background.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザー登録 | ぬくみずとのエンカ表</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body>
+
+    <div id="toast" class="toast"></div>
+
+    <div id="background1" class="background"></div>
+    <div id="background2" class="background"></div>
+
+    <div class="container">
+
+        <h1 class="title">
+            ユーザー登録
+        </h1>
+
+        <p class="subtitle">
+            新しくアカウントを作成します
+        </p>
+
+        <form id="registerForm">
+
+            <input
+                type="text"
+                id="username"
+                placeholder="ユーザー名"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="パスワード（半角英数字）"
+                required
+            >
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="パスワード（確認）"
+                required
+            >
+
+            <button type="submit" class="btn">
+                登録する
+            </button>
+
+        </form>
+
+        <p class="link-text">
+            登録済みの方は
+            <a href="login.html">こちら</a>
+        </p>
+
+    </div>
+
+    <script type="module" src="js/register.js"></script>
+    <script src="js/background.js"></script>
+
+</body>
+
+</html>

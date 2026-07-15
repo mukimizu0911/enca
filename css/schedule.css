@@ -1,0 +1,206 @@
+/* =========================
+   ラベル・選択ボックス
+========================= */
+
+label{
+
+    display:block;
+
+    text-align:left;
+
+    margin:20px 0 10px;
+
+    font-weight:bold;
+
+    color:#003366;
+
+}
+
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:1rem;
+
+    outline:none;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* =========================
+   一覧エリア
+========================= */
+
+#scheduleArea{
+
+    margin-top:20px;
+
+}
+
+#scheduleList{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+
+/* =========================
+   イベント名
+========================= */
+
+.event-title{
+
+    text-align:center;
+
+    color:#003366;
+
+    font-size:1.6rem;
+
+    margin-bottom:20px;
+
+    padding-bottom:15px;
+
+    border-bottom:3px solid #00a8ff;
+
+}
+
+
+
+/* =========================
+   時間カード
+========================= */
+
+.schedule-card{
+
+    background:#ffffff;
+
+    border-left:6px solid #00a8ff;
+
+    border-radius:15px;
+
+    padding:18px 22px;
+
+    margin:10px 0;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+    transition:.25s;
+
+}
+.schedule-card:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+}
+
+
+
+/* =========================
+   時間
+========================= */
+
+.schedule-time{
+
+    color:#003366;
+
+    font-size:1.35rem;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+    padding-bottom:10px;
+
+    border-bottom:2px solid #eeeeee;
+
+}
+
+
+
+/* =========================
+   ユーザー
+========================= */
+
+.schedule-user{
+
+    font-size:1.05rem;
+
+    color:#444;
+
+    padding:10px 0;
+
+    transition:.2s;
+
+}
+
+.schedule-user:hover{
+
+    padding-left:8px;
+
+}
+
+
+
+/* =========================
+   メッセージ
+========================= */
+
+.emptyMessage{
+
+    text-align:center;
+
+    color:#777;
+
+    padding:40px 20px;
+
+}
+
+
+
+/* =========================
+   スマホ対応
+========================= */
+
+@media (max-width:480px){
+
+    .event-title{
+
+        font-size:1.25rem;
+
+    }
+
+    .schedule-card{
+
+        padding:16px;
+
+    }
+
+    .schedule-time{
+
+        font-size:1.15rem;
+
+    }
+
+    .schedule-user{
+
+        font-size:1rem;
+
+    }
+
+}

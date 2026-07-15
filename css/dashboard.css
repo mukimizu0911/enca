@@ -1,0 +1,113 @@
+.user-info{
+
+    margin:30px 0;
+
+}
+
+.welcome{
+
+    font-size:1rem;
+
+    color:#555;
+
+}
+
+.username{
+
+    font-size:2rem;
+
+    color:#003366;
+
+    margin:10px 0;
+
+}
+
+.userid{
+
+    color:#777;
+
+    font-size:0.9rem;
+
+}
+
+.menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.logout{
+
+    background:#ff6b6b;
+
+}
+
+.logout:hover{
+
+    background:#ff5252;
+
+}
+/* =========================
+   ランダム挨拶
+========================= */
+
+#welcomeArea{
+
+    margin:30px 0;
+
+}
+
+#greetingCard{
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.45);
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+#characterName{
+
+    font-size:1.6rem;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+}
+
+#characterMessage{
+
+    white-space:pre-line;
+
+    font-size:1.2rem;
+
+    line-height:1.8;
+
+    font-weight:bold;
+
+}
+/* =========================
+   日付
+========================= */
+
+.today{
+
+    margin:15px 0;
+
+    color:#555;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+}
