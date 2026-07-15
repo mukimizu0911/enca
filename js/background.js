@@ -104,4 +104,4 @@ function changeBackground() {
 // 8秒ごとに切り替え
 // =========================
 
-setInterval(changeBackground, 8000);
+setInterval(changeBackground, 7000);
