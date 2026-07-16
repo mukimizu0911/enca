@@ -28,26 +28,12 @@ const month = String(today.getMonth() + 1).padStart(2, "0");
 
 const day = String(today.getDate()).padStart(2, "0");
 
+// 日替わりアイコン
+const todayGreeting =
+    greetings[today.getDate() % greetings.length];
+
 document.getElementById("today").textContent =
-`📅 ${year}/${month}/${day}（${week[today.getDay()]}）`;
-
-
-
-// =========================
-// ランダムコールレスポンス
-// =========================
-
-const randomGreeting =
-greetings[Math.floor(Math.random() * greetings.length)];
-
-const message =
-document.getElementById("characterMessage");
-
-message.textContent =
-`${randomGreeting.icon} ${randomGreeting.message}`;
-
-message.style.color =
-randomGreeting.color;
+`${todayGreeting.icon} ${year}/${month}/${day}（${week[today.getDay()]}）`;
 
 
 
